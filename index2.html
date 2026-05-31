@@ -456,33 +456,6 @@
 </div>
 
 <script>
-    // Filter
-    function filterCards(cat, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.card').forEach(card => {
-            if (cat === 'all' || card.dataset.cat === cat) {
-                card.style.display = '';
-                setTimeout(() => card.style.opacity = '1', 10);
-            } else {
-                card.style.opacity = '0';
-                setTimeout(() => card.style.display = 'none', 200);
-            }
-        });
-    }
-
-    // Filter
-    function filterCards(cat, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.card').forEach(card => {
-            const show = cat === 'all' || card.dataset.cat === cat;
-            card.style.transition = 'opacity 0.2s';
-            if (show) { card.style.display = ''; setTimeout(() => card.style.opacity = '1', 10); }
-            else { card.style.opacity = '0'; setTimeout(() => card.style.display = 'none', 220); }
-        });
-    }
-
     // ── Filter with smooth animations ──────────────────────────────
     function filterCards(cat, btn) {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -684,11 +657,30 @@
     function applyLang(lang) {
         const t = T[lang] || T.en;
         document.documentElement.lang = lang;
-        // Translate all data-i18n elements
+
+        // Translate all data-i18n elements (cards, badges, etc.)
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (t[key] !== undefined) el.textContent = t[key];
         });
+
+        // Translate id-based elements (hero, filter buttons, CTA)
+        const set = (id, key) => {
+            const el = document.getElementById(id);
+            if (el && t[key] !== undefined) el.textContent = t[key];
+        };
+        set('backTxt',     'back');
+        set('heroTag',     'heroTag');
+        set('heroTitle',   'heroTitle');
+        set('heroSubtitle','heroSubtitle');
+        set('fAll',        'fAll');
+        set('fLocal',      'fLocal');
+        set('fExcursion',  'fExcursion');
+        set('fBoat',       'fBoat');
+        set('fNature',     'fNature');
+        set('ctaTitle',    'ctaTitle');
+        set('ctaDesc',     'ctaDesc');
+        set('ctaBtn',      'ctaBtn');
     }
 
     function setLang(lang) {
