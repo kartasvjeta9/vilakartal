@@ -542,4 +542,111 @@
     });
 </script>
 </body>
+</html    <script>
+    // Filter
+    function filterCards(cat, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.card').forEach(card => {
+            const show = cat === 'all' || card.dataset.cat === cat;
+            card.style.transition = 'opacity 0.2s';
+            if (show) { card.style.display = ''; setTimeout(() => card.style.opacity = '1', 10); }
+            else { card.style.opacity = '0'; setTimeout(() => card.style.display = 'none', 220); }
+        });
+    }
+
+    // Translations for index2
+    const T = {
+        en: {
+            back:"Back to Villa", heroTag:"🌊 Local Guide",
+            heroTitle:"Discover Tribunj & Surroundings",
+            heroSubtitle:"Your complete guide to the best beaches, excursions, and experiences near Vila Kartal.",
+            fAll:"All", fLocal:"🏘 In Tribunj", fExcursion:"🚗 Day Trips", fBoat:"⛵ Boat & Islands", fNature:"🌿 Nature",
+            ctaTitle:"Ready to explore Tribunj?",
+            ctaDesc:"Book your stay at Vila Kartal and experience all of this on your doorstep.",
+            ctaBtn:"Send an Inquiry"
+        },
+        de: {
+            back:"Zurück zur Villa", heroTag:"🌊 Reiseführer",
+            heroTitle:"Tribunj & Umgebung entdecken",
+            heroSubtitle:"Ihr kompletter Leitfaden zu den besten Stränden, Ausflügen und Erlebnissen rund um die Vila Kartal.",
+            fAll:"Alle", fLocal:"🏘 In Tribunj", fExcursion:"🚗 Ausflüge", fBoat:"⛵ Boot & Inseln", fNature:"🌿 Natur",
+            ctaTitle:"Bereit, Tribunj zu erkunden?",
+            ctaDesc:"Buchen Sie Ihren Aufenthalt in der Vila Kartal und erleben Sie all das vor Ihrer Haustür.",
+            ctaBtn:"Anfrage senden"
+        },
+        hr: {
+            back:"Natrag na vilu", heroTag:"🌊 Lokalni vodič",
+            heroTitle:"Otkrijte Tribunj i okolicu",
+            heroSubtitle:"Vaš potpuni vodič kroz najljepše plaže, izlete i doživljaje u blizini Vila Kartal.",
+            fAll:"Sve", fLocal:"🏘 U Tribunju", fExcursion:"🚗 Izleti", fBoat:"⛵ Brodovi & Otoci", fNature:"🌿 Priroda",
+            ctaTitle:"Spremni za istraživanje Tribunja?",
+            ctaDesc:"Rezervirajte boravak u Vila Kartal i doživite sve ovo na pragu vrata.",
+            ctaBtn:"Pošalji upit"
+        },
+        fr: {
+            back:"Retour à la villa", heroTag:"🌊 Guide local",
+            heroTitle:"Découvrir Tribunj & ses environs",
+            heroSubtitle:"Votre guide complet des meilleures plages, excursions et expériences autour de la Vila Kartal.",
+            fAll:"Tout", fLocal:"🏘 À Tribunj", fExcursion:"🚗 Excursions", fBoat:"⛵ Bateaux & Îles", fNature:"🌿 Nature",
+            ctaTitle:"Prêt à explorer Tribunj ?",
+            ctaDesc:"Réservez votre séjour à la Vila Kartal et profitez de tout cela à votre porte.",
+            ctaBtn:"Envoyer une demande"
+        },
+        it: {
+            back:"Torna alla villa", heroTag:"🌊 Guida locale",
+            heroTitle:"Scopri Tribunj e dintorni",
+            heroSubtitle:"La tua guida completa alle migliori spiagge, escursioni ed esperienze vicino alla Vila Kartal.",
+            fAll:"Tutto", fLocal:"🏘 A Tribunj", fExcursion:"🚗 Gite", fBoat:"⛵ Barche & Isole", fNature:"🌿 Natura",
+            ctaTitle:"Pronti a esplorare Tribunj?",
+            ctaDesc:"Prenota il tuo soggiorno alla Vila Kartal e goditi tutto questo a portata di mano.",
+            ctaBtn:"Invia richiesta"
+        }
+    };
+
+    function applyLang(lang) {
+        const t = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        const set = (id, val) => { const el = document.getElementById(id); if(el) el.textContent = val; };
+        set('backTxt', t.back);
+        set('heroTag', t.heroTag);
+        set('heroTitle', t.heroTitle);
+        set('heroSubtitle', t.heroSubtitle);
+        set('fAll', t.fAll);
+        set('fLocal', t.fLocal);
+        set('fExcursion', t.fExcursion);
+        set('fBoat', t.fBoat);
+        set('fNature', t.fNature);
+        set('ctaTitle', t.ctaTitle);
+        set('ctaDesc', t.ctaDesc);
+        set('ctaBtn', t.ctaBtn);
+    }
+
+    function setLang(lang) {
+        // Save so main page also gets it
+        try { localStorage.setItem('vilaKartalLang', lang); } catch(e) {}
+        document.body.style.transition = 'opacity 0.28s';
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+            applyLang(lang);
+            document.body.style.opacity = '1';
+        }, 250);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const supported = ['en','de','hr','fr','it'];
+        // 1. Read from localStorage (set by main page)
+        let lang = null;
+        try { lang = localStorage.getItem('vilaKartalLang'); } catch(e) {}
+        // 2. Fall back to browser language
+        if (!lang || !supported.includes(lang)) {
+            lang = navigator.language.slice(0,2);
+            if (!supported.includes(lang)) lang = 'en';
+        }
+        const sel = document.getElementById('langSel');
+        if (sel) sel.value = lang;
+        applyLang(lang);
+    });
+    </script>
+</body>
 </html>
