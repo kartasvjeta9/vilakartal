@@ -1502,11 +1502,11 @@
                 Vila Kartal
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" data-i18n="navAbout">About</a></li>
                 <li><a href="#services" data-i18n="footerServices">Services</a></li>
                 <li><a href="#gallery" data-i18n="footerGallery">Gallery</a></li>
-                <li><a href="index2.html">Explore</a></li>
-                <li><a href="#booking">Book Now</a></li>
+                <li><a href="index2.html" data-i18n="navExplore">Explore</a></li>
+                <li><a href="#booking" data-i18n="navBook">Book Now</a></li>
                 <li><a href="#contact" data-i18n="footerContactLink">Contact</a></li>
             </ul>
             <div class="nav-right">
@@ -1693,12 +1693,12 @@
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
-                    <blockquote>"An absolutely stunning villa with breathtaking sea views. Elvis was the perfect host — attentive, warm, and full of local recommendations. We'll definitely be back!"</blockquote>
+                    <blockquote data-i18n="rev1q">"An absolutely stunning villa with breathtaking sea views. Elvis was the perfect host — attentive, warm, and full of local recommendations. We'll definitely be back!"</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SM</div>
                         <div class="testimonial-author-info">
                             <strong>Sarah Mitchell</strong>
-                            <span>United Kingdom</span>
+                            <span data-i18n="rev1loc">United Kingdom</span>
                         </div>
                     </div>
                 </div>
@@ -1710,12 +1710,12 @@
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
-                    <blockquote>"Tribunj is a hidden gem and Vila Kartal is the perfect place to stay. The terrace overlooking the sea was our favorite spot for morning coffee. Pure magic!"</blockquote>
+                    <blockquote data-i18n="rev2q">"Tribunj is a hidden gem and Vila Kartal is the perfect place to stay. The terrace overlooking the sea was our favorite spot for morning coffee. Pure magic!"</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">MH</div>
                         <div class="testimonial-author-info">
                             <strong>Marco Hoffmann</strong>
-                            <span>Germany</span>
+                            <span data-i18n="rev2loc">Germany</span>
                         </div>
                     </div>
                 </div>
@@ -1727,16 +1727,16 @@
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
-                    <blockquote>"We spent a wonderful week here with our family. The kids loved the nearby beaches, and we appreciated the peaceful atmosphere. Elvis made us feel like family!"</blockquote>
+                    <blockquote data-i18n="rev3q">"We spent a wonderful week here with our family. The kids loved the nearby beaches, and we appreciated the peaceful atmosphere. Elvis made us feel like family!"</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">JP</div>
                         <div class="testimonial-author-info">
                             <strong>Jean-Pierre Dubois</strong>
-                            <span>France</span>
+                            <span data-i18n="rev3loc">France</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></div>
         </div>
     </section>
 
@@ -2090,7 +2090,13 @@
             phName:"John Doe", phEmail:"john@example.com", phPhone:"+385 91 234 5678",
             phNotes:"Any special requirements, questions or notes for us...",
             phContactName:"Full name", phContactEmail:"Email address",
-            phSubject:"What's this about?", phMessage:"Tell us how we can help..."
+            phSubject:"What's this about?", phMessage:"Tell us how we can help...",
+            rev1q:"\"An absolutely stunning villa with breathtaking sea views. Elvis was the perfect host — attentive, warm, and full of local recommendations. We'll definitely be back!\"",
+            rev1loc:"United Kingdom",
+            rev2q:"\"Tribunj is a hidden gem and Vila Kartal is the perfect place to stay. The terrace overlooking the sea was our favorite spot for morning coffee. Pure magic!\"",
+            rev2loc:"Germany",
+            rev3q:"\"We spent a wonderful week here with our family. The kids loved the nearby beaches, and we appreciated the peaceful atmosphere. Elvis made us feel like family!\"",
+            rev3loc:"France"
         },
         de: {
             navAbout:"Über uns", navServices:"Leistungen", navGallery:"Galerie",
@@ -2157,7 +2163,13 @@
             phName:"Max Mustermann", phEmail:"max@beispiel.de", phPhone:"+385 91 234 5678",
             phNotes:"Besondere Wünsche oder Anmerkungen...",
             phContactName:"Vollständiger Name", phContactEmail:"E-Mail-Adresse",
-            phSubject:"Worum geht es?", phMessage:"Wie können wir Ihnen helfen..."
+            phSubject:"Worum geht es?", phMessage:"Wie können wir Ihnen helfen...",
+            rev1q:"\"Eine absolut atemberaubende Villa mit herrlichem Meerblick. Elvis war der perfekte Gastgeber — aufmerksam, herzlich und voller lokaler Tipps. Wir kommen definitiv wieder!\"",
+            rev1loc:"Vereinigtes Königreich",
+            rev2q:"\"Tribunj ist ein verstecktes Juwel und die Vila Kartal ist der perfekte Ort zum Übernachten. Die Terrasse mit Meerblick war unser Lieblingsplatz für den Morgenkaffee. Purer Zauber!\"",
+            rev2loc:"Deutschland",
+            rev3q:"\"Wir haben hier eine wunderbare Woche mit unserer Familie verbracht. Die Kinder liebten die nahen Strände, und wir schätzten die ruhige Atmosphäre. Elvis ließ uns wie Familie fühlen!\"",
+            rev3loc:"Frankreich"
         },
         hr: {
             navAbout:"O nama", navServices:"Usluge", navGallery:"Galerija",
@@ -2224,7 +2236,13 @@
             phName:"Ime i prezime", phEmail:"vas@email.hr", phPhone:"+385 91 234 5678",
             phNotes:"Posebni zahtjevi ili napomene za nas...",
             phContactName:"Puno ime", phContactEmail:"E-mail adresa",
-            phSubject:"O čemu se radi?", phMessage:"Kako vam možemo pomoći..."
+            phSubject:"O čemu se radi?", phMessage:"Kako vam možemo pomoći...",
+            rev1q:"\"Iznimno lijepa vila s predivnim pogledom na more. Elvis je bio savršen domaćin — pažljiv, srdačan i pun lokalnih preporuka. Definitivno se vraćamo!\"",
+            rev1loc:"Ujedinjeno Kraljevstvo",
+            rev2q:"\"Tribunj je skriveni dragulj, a Vila Kartal je savršeno mjesto za odmor. Terasa s pogledom na more bila je naše omiljeno mjesto za jutarnju kavu. Čista magija!\"",
+            rev2loc:"Njemačka",
+            rev3q:"\"Proveli smo prekrasan tjedan ovdje s obitelji. Djeca su obožavala obližnje plaže, a mi smo cijenili mirnu atmosferu. Elvis nas je napravio osjećati kao obitelj!\"",
+            rev3loc:"Francuska"
         },
         fr: {
             navAbout:"À propos", navServices:"Services", navGallery:"Galerie",
@@ -2291,7 +2309,13 @@
             phName:"Jean Dupont", phEmail:"jean@example.fr", phPhone:"+385 91 234 5678",
             phNotes:"Demandes spéciales ou notes pour nous...",
             phContactName:"Nom complet", phContactEmail:"Adresse e-mail",
-            phSubject:"De quoi s'agit-il ?", phMessage:"Comment pouvons-nous vous aider..."
+            phSubject:"De quoi s'agit-il ?", phMessage:"Comment pouvons-nous vous aider...",
+            rev1q:"\"Une villa absolument magnifique avec une vue imprenable sur la mer. Elvis était l'hôte parfait — attentif, chaleureux et plein de recommandations locales. On reviendra certainement !\"",
+            rev1loc:"Royaume-Uni",
+            rev2q:"\"Tribunj est un joyau caché et la Vila Kartal est l'endroit idéal pour séjourner. La terrasse avec vue sur la mer était notre endroit préféré pour le café du matin. Pur enchantement !\"",
+            rev2loc:"Allemagne",
+            rev3q:"\"Nous avons passé une semaine merveilleuse ici en famille. Les enfants ont adoré les plages voisines, et nous avons apprécié l'atmosphère paisible. Elvis nous a fait sentir comme en famille !\"",
+            rev3loc:"France"
         },
         it: {
             navAbout:"Chi siamo", navServices:"Servizi", navGallery:"Galleria",
@@ -2358,7 +2382,13 @@
             phName:"Mario Rossi", phEmail:"mario@esempio.it", phPhone:"+385 91 234 5678",
             phNotes:"Richieste speciali o note per noi...",
             phContactName:"Nome completo", phContactEmail:"Indirizzo e-mail",
-            phSubject:"Di cosa si tratta?", phMessage:"Come possiamo aiutarti..."
+            phSubject:"Di cosa si tratta?", phMessage:"Come possiamo aiutarti...",
+            rev1q:"\"Una villa assolutamente stupenda con viste mozzafiato sul mare. Elvis era l'ospite perfetto — premuroso, caloroso e pieno di consigli locali. Torneremo sicuramente!\"",
+            rev1loc:"Regno Unito",
+            rev2q:"\"Tribunj è un gioiello nascosto e la Vila Kartal è il posto perfetto dove soggiornare. La terrazza con vista sul mare era il nostro posto preferito per il caffè mattutino. Pura magia!\"",
+            rev2loc:"Germania",
+            rev3q:"\"Abbiamo trascorso una settimana meravigliosa qui con la nostra famiglia. I bambini adoravano le spiagge vicine, e abbiamo apprezzato l'atmosfera tranquilla. Elvis ci ha fatto sentire come in famiglia!\"",
+            rev3loc:"Francia"
         }
     };
 
