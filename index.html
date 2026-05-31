@@ -2135,150 +2135,267 @@
     // ===== MULTILINGUAL TRANSLATIONS =====
     const translations = {
         en: {
-            navAbout: "About", navServices: "Services", navGallery: "Gallery",
-            navExplore: "Explore", navBook: "Book Now", navContact: "Contact",
-            heroBadge: "Tribunj, Croatia",
-            heroTitle: "Welcome to Vila Kartal",
-            heroSubtitle: "Your peaceful retreat on the stunning Adriatic coast. Discover authentic coastal charm, crystal-clear waters, and unforgettable Dalmatian hospitality.",
-            heroBtn1: "Send Inquiry", heroBtn2: "Explore More",
-            heroScroll: "Scroll Down",
-            aboutTag: "Discover Us", aboutTitle: "About Vila Kartal",
-            aboutSubtitle: "Experience the perfect blend of traditional Dalmatian charm and modern comfort on the Adriatic coast.",
-            exploreTitle: "Discover Tribunj & Surroundings",
-            exploreSubtitle: "Welcome to Tribunj! Here are our top recommendations for activities and attractions you shouldn't miss during your stay.",
-            bookingTag: "Plan Your Visit", bookingTitle: "Send an Inquiry",
-            bookingSubtitle: "Fill in the form below and we will get back to you as soon as possible to confirm availability and discuss your stay.",
-            contactTag: "Get in Touch", contactTitle: "Contact Us",
-            contactSubtitle: "Have questions? We'd love to hear from you. Reach out anytime.",
-            footerTagline: "Your peaceful retreat on the stunning Adriatic coast. Experience authentic Dalmatian hospitality in the heart of Tribunj, Croatia."
+            navAbout:"About", navServices:"Services", navGallery:"Gallery",
+            navExplore:"Explore", navBook:"Book Now", navContact:"Contact",
+            heroBadge:"Tribunj, Croatia",
+            heroTitle:"Welcome to Vila Kartal",
+            heroSubtitle:"Your peaceful retreat on the stunning Adriatic coast. Discover authentic coastal charm, crystal-clear waters, and unforgettable Dalmatian hospitality.",
+            heroBtn1:"Send Inquiry", heroBtn2:"Explore More", heroScroll:"Scroll Down",
+            aboutTag:"Discover Us", aboutTitle:"About Vila Kartal",
+            aboutSubtitle:"Experience the perfect blend of traditional Dalmatian charm and modern comfort on the Adriatic coast.",
+            aboutP1:"Nestled in the charming coastal town of Tribunj, Vila Kartal offers a perfect blend of traditional Dalmatian architecture and modern comfort. Our villa provides an ideal base for exploring the pristine beaches, crystal-clear waters, and rich cultural heritage of the Croatian coast.",
+            aboutP2:"Whether you're seeking a romantic getaway, a family vacation, or a peaceful retreat, our dedicated team ensures every detail is taken care of with warmth and personal attention.",
+            feat1:"Sea View Terrace", feat2:"Private Parking", feat3:"Modern Kitchen", feat4:"Air Conditioning",
+            ownerRole:"Owner & Host",
+            servicesTag:"Our Amenities", servicesTitle:"Villa Services", servicesSubtitle:"Everything you need for a perfect Adriatic getaway.",
+            svc1Title:"Swimming Pool", svc1Desc:"Enjoy our private outdoor pool surrounded by the Mediterranean garden.",
+            svc2Title:"Free Wi-Fi", svc2Desc:"Stay connected with high-speed internet throughout the entire property.",
+            svc3Title:"Airport Transfer", svc3Desc:"Convenient pickup and drop-off services from Zadar or Split airports.",
+            svc4Title:"Local Tours", svc4Desc:"Discover hidden gems with our guided local excursions and recommendations.",
+            galleryTag:"Visual Journey", galleryTitle:"Our Gallery", gallerySubtitle:"A glimpse into the beauty and tranquility that awaits you at Vila Kartal.",
+            exploreTitle:"Discover Tribunj & Surroundings",
+            exploreSubtitle:"Welcome to Tribunj! Here are our top recommendations for activities and attractions you shouldn't miss during your stay.",
+            reviewsTag:"Guest Reviews", reviewsTitle:"What Our Guests Say", reviewsSubtitle:"Real experiences from our guests on Google Reviews.",
+            bookingTag:"Plan Your Visit", bookingTitle:"Send an Inquiry",
+            bookingSubtitle:"Fill in the form below and we will get back to you as soon as possible to confirm availability and discuss your stay.",
+            bookingWhy:"How It Works",
+            bookingWhyDesc:"We handle every booking personally to make sure your stay at Vila Kartal is exactly what you need. Simply send us your inquiry and we'll be in touch within 24 hours.",
+            contactTag:"Get in Touch", contactTitle:"Contact Us", contactSubtitle:"Have questions? We'd love to hear from you. Reach out anytime.",
+            footerTagline:"Your peaceful retreat on the stunning Adriatic coast. Experience authentic Dalmatian hospitality in the heart of Tribunj, Croatia.",
+            footerQuick:"Quick Links", footerExplore:"Explore", footerContact:"Contact Info",
+            footerReviews:"Guest Reviews", footerAttractions:"Local Attractions",
+            footerBeach:"Beach Guide", footerRestaurants:"Restaurant Tips", footerBoat:"Boat Tours"
         },
         de: {
-            navAbout: "Über uns", navServices: "Leistungen", navGallery: "Galerie",
-            navExplore: "Erkunden", navBook: "Jetzt buchen", navContact: "Kontakt",
-            heroBadge: "Tribunj, Kroatien",
-            heroTitle: "Willkommen in der Vila Kartal",
-            heroSubtitle: "Ihr ruhiger Rückzugsort an der wunderschönen Adriaküste. Entdecken Sie authentischen Küstencharme, kristallklares Wasser und unvergessliche dalmatinische Gastfreundschaft.",
-            heroBtn1: "Anfrage senden", heroBtn2: "Mehr entdecken",
-            heroScroll: "Nach unten scrollen",
-            aboutTag: "Entdecken Sie uns", aboutTitle: "Über Vila Kartal",
-            aboutSubtitle: "Erleben Sie die perfekte Mischung aus traditionellem Dalmatiner Charme und modernem Komfort an der Adria.",
-            exploreTitle: "Tribunj & Umgebung entdecken",
-            exploreSubtitle: "Willkommen in Tribunj! Hier sind unsere Top-Empfehlungen für Aktivitäten und Sehenswürdigkeiten, die Sie während Ihres Aufenthalts nicht verpassen sollten.",
-            bookingTag: "Ihren Aufenthalt planen", bookingTitle: "Anfrage senden",
-            bookingSubtitle: "Füllen Sie das Formular aus und wir melden uns so schnell wie möglich, um Verfügbarkeit zu bestätigen.",
-            contactTag: "Kontakt aufnehmen", contactTitle: "Kontakt",
-            contactSubtitle: "Haben Sie Fragen? Wir freuen uns von Ihnen zu hören. Schreiben Sie uns jederzeit.",
-            footerTagline: "Ihr ruhiger Rückzugsort an der wunderschönen Adria. Erleben Sie authentische dalmatinische Gastfreundschaft im Herzen von Tribunj."
+            navAbout:"Über uns", navServices:"Leistungen", navGallery:"Galerie",
+            navExplore:"Erkunden", navBook:"Jetzt buchen", navContact:"Kontakt",
+            heroBadge:"Tribunj, Kroatien",
+            heroTitle:"Willkommen in der Vila Kartal",
+            heroSubtitle:"Ihr ruhiger Rückzugsort an der wunderschönen Adriaküste. Entdecken Sie authentischen Küstencharme, kristallklares Wasser und unvergessliche dalmatinische Gastfreundschaft.",
+            heroBtn1:"Anfrage senden", heroBtn2:"Mehr entdecken", heroScroll:"Nach unten scrollen",
+            aboutTag:"Entdecken Sie uns", aboutTitle:"Über Vila Kartal",
+            aboutSubtitle:"Erleben Sie die perfekte Mischung aus traditionellem Dalmatiner Charme und modernem Komfort an der Adria.",
+            aboutP1:"Eingebettet in die charmante Küstenstadt Tribunj bietet die Vila Kartal eine perfekte Mischung aus traditioneller dalmatinischer Architektur und modernem Komfort. Unsere Villa ist ein idealer Ausgangspunkt, um die unberührten Strände, das kristallklare Wasser und das reiche Kulturerbe der kroatischen Küste zu erkunden.",
+            aboutP2:"Ob Sie einen romantischen Kurzurlaub, einen Familienurlaub oder einen ruhigen Rückzug suchen – unser engagiertes Team sorgt dafür, dass jedes Detail mit Wärme und persönlicher Aufmerksamkeit erledigt wird.",
+            feat1:"Meerblick-Terrasse", feat2:"Privater Parkplatz", feat3:"Moderne Küche", feat4:"Klimaanlage",
+            ownerRole:"Eigentümer & Gastgeber",
+            servicesTag:"Unsere Angebote", servicesTitle:"Villa Services", servicesSubtitle:"Alles was Sie für einen perfekten Adria-Urlaub brauchen.",
+            svc1Title:"Schwimmbad", svc1Desc:"Genießen Sie unseren privaten Außenpool umgeben vom mediterranen Garten.",
+            svc2Title:"Kostenloses WLAN", svc2Desc:"Bleiben Sie mit schnellem Internet auf dem gesamten Gelände verbunden.",
+            svc3Title:"Flughafentransfer", svc3Desc:"Bequemer Abholservice vom Flughafen Zadar oder Split.",
+            svc4Title:"Lokale Touren", svc4Desc:"Entdecken Sie versteckte Schätze mit unseren geführten lokalen Ausflügen.",
+            galleryTag:"Bildergalerie", galleryTitle:"Unsere Galerie", gallerySubtitle:"Ein Einblick in die Schönheit und Ruhe, die Sie in der Vila Kartal erwartet.",
+            exploreTitle:"Tribunj & Umgebung entdecken",
+            exploreSubtitle:"Willkommen in Tribunj! Hier sind unsere Top-Empfehlungen für Aktivitäten und Sehenswürdigkeiten.",
+            reviewsTag:"Gästebewertungen", reviewsTitle:"Was unsere Gäste sagen", reviewsSubtitle:"Echte Erfahrungen unserer Gäste auf Google Reviews.",
+            bookingTag:"Aufenthalt planen", bookingTitle:"Anfrage senden",
+            bookingSubtitle:"Füllen Sie das Formular aus und wir melden uns schnellstmöglich zur Bestätigung der Verfügbarkeit.",
+            bookingWhy:"So funktioniert es",
+            bookingWhyDesc:"Wir bearbeiten jede Buchung persönlich. Senden Sie uns einfach Ihre Anfrage und wir melden uns innerhalb von 24 Stunden.",
+            contactTag:"Kontakt aufnehmen", contactTitle:"Kontakt", contactSubtitle:"Haben Sie Fragen? Wir freuen uns von Ihnen zu hören.",
+            footerTagline:"Ihr ruhiger Rückzugsort an der wunderschönen Adria. Erleben Sie authentische dalmatinische Gastfreundschaft im Herzen von Tribunj.",
+            footerQuick:"Schnellzugriff", footerExplore:"Erkunden", footerContact:"Kontakt",
+            footerReviews:"Gästebewertungen", footerAttractions:"Sehenswürdigkeiten",
+            footerBeach:"Strandführer", footerRestaurants:"Restaurant-Tipps", footerBoat:"Bootstouren"
         },
         hr: {
-            navAbout: "O nama", navServices: "Usluge", navGallery: "Galerija",
-            navExplore: "Istraži", navBook: "Rezerviraj", navContact: "Kontakt",
-            heroBadge: "Tribunj, Hrvatska",
-            heroTitle: "Dobrodošli u Vila Kartal",
-            heroSubtitle: "Vaše mirno utočište na prekrasnoj jadranskoj obali. Otkrijte autentičan obalni šarm, kristalno čisto more i nezaboravno dalmatinsko gostoprimstvo.",
-            heroBtn1: "Pošalji upit", heroBtn2: "Istraži više",
-            heroScroll: "Skrolaj dolje",
-            aboutTag: "Upoznajte nas", aboutTitle: "O Vila Kartal",
-            aboutSubtitle: "Doživite savršenu mješavinu tradicionalnog dalmatinskog šarma i modernog komfora na jadranskoj obali.",
-            exploreTitle: "Otkrijte Tribunj i okolicu",
-            exploreSubtitle: "Dobrodošli u Tribunj! Evo naših preporuka za aktivnosti i atrakcije koje ne biste trebali propustiti.",
-            bookingTag: "Planirajte posjet", bookingTitle: "Pošalji upit",
-            bookingSubtitle: "Ispunite obrazac i javit ćemo vam se u najkraćem roku kako bismo potvrdili dostupnost i dogovorili sve detalje.",
-            contactTag: "Javite nam se", contactTitle: "Kontakt",
-            contactSubtitle: "Imate pitanja? Voljeli bismo čuti od vas. Javite nam se u bilo koje vrijeme.",
-            footerTagline: "Vaše mirno utočište na prekrasnoj jadranskoj obali. Doživite autentično dalmatinsko gostoprimstvo u srcu Tribunja."
+            navAbout:"O nama", navServices:"Usluge", navGallery:"Galerija",
+            navExplore:"Istraži", navBook:"Rezerviraj", navContact:"Kontakt",
+            heroBadge:"Tribunj, Hrvatska",
+            heroTitle:"Dobrodošli u Vila Kartal",
+            heroSubtitle:"Vaše mirno utočište na prekrasnoj jadranskoj obali. Otkrijte autentičan obalni šarm, kristalno čisto more i nezaboravno dalmatinsko gostoprimstvo.",
+            heroBtn1:"Pošalji upit", heroBtn2:"Istraži više", heroScroll:"Skrolaj dolje",
+            aboutTag:"Upoznajte nas", aboutTitle:"O Vila Kartal",
+            aboutSubtitle:"Doživite savršenu mješavinu tradicionalnog dalmatinskog šarma i modernog komfora na jadranskoj obali.",
+            aboutP1:"Smještena u šarmantnom obalnom gradu Tribunju, Vila Kartal nudi savršenu mješavinu tradicionalne dalmatinske arhitekture i modernog komfora. Naša vila pruža idealno polazište za istraživanje netaknutih plaža, kristalno čistog mora i bogatog kulturnog nasljeđa hrvatske obale.",
+            aboutP2:"Bez obzira tražite li romantičan odmor, obiteljske praznike ili miran bijeg od svakodnevice, naš tim brine da svaki detalj bude obavljen s toplinom i osobnom pažnjom.",
+            feat1:"Terasa s pogledom na more", feat2:"Privatni parking", feat3:"Moderna kuhinja", feat4:"Klimatizacija",
+            ownerRole:"Vlasnik & Domaćin",
+            servicesTag:"Naše pogodnosti", servicesTitle:"Usluge vile", servicesSubtitle:"Sve što vam je potrebno za savršen jadranski odmor.",
+            svc1Title:"Bazen", svc1Desc:"Uživajte u našem privatnom vanjskom bazenu okruženom mediteranskim vrtom.",
+            svc2Title:"Besplatni Wi-Fi", svc2Desc:"Ostanite povezani brzim internetom na cijelom imanju.",
+            svc3Title:"Prijevoz do aerodroma", svc3Desc:"Ugodan prijevoz od aerodroma Zadar ili Split.",
+            svc4Title:"Lokalne ture", svc4Desc:"Otkrijte skrivene dragulje s našim vođenim lokalnim izletima.",
+            galleryTag:"Vizualni doživljaj", galleryTitle:"Naša galerija", gallerySubtitle:"Pogled na ljepotu i mir koji vas čekaju u Vila Kartal.",
+            exploreTitle:"Otkrijte Tribunj i okolicu",
+            exploreSubtitle:"Dobrodošli u Tribunj! Evo naših preporuka za aktivnosti i atrakcije koje ne biste trebali propustiti.",
+            reviewsTag:"Recenzije gostiju", reviewsTitle:"Što kažu naši gosti", reviewsSubtitle:"Stvarna iskustva naših gostiju na Google recenzijama.",
+            bookingTag:"Planirajte posjet", bookingTitle:"Pošalji upit",
+            bookingSubtitle:"Ispunite obrazac i javit ćemo vam se u najkraćem roku kako bismo potvrdili dostupnost.",
+            bookingWhy:"Kako funkcionira",
+            bookingWhyDesc:"Svaku rezervaciju obrađujemo osobno. Jednostavno nam pošaljite upit i javit ćemo vam se unutar 24 sata.",
+            contactTag:"Javite nam se", contactTitle:"Kontakt", contactSubtitle:"Imate pitanja? Voljeli bismo čuti od vas.",
+            footerTagline:"Vaše mirno utočište na prekrasnoj jadranskoj obali. Doživite autentično dalmatinsko gostoprimstvo u srcu Tribunja.",
+            footerQuick:"Brzi linkovi", footerExplore:"Istraži", footerContact:"Kontakt info",
+            footerReviews:"Recenzije gostiju", footerAttractions:"Lokalne atrakcije",
+            footerBeach:"Vodič za plaže", footerRestaurants:"Savjeti za restorane", footerBoat:"Brodski izleti"
         },
         fr: {
-            navAbout: "À propos", navServices: "Services", navGallery: "Galerie",
-            navExplore: "Explorer", navBook: "Réserver", navContact: "Contact",
-            heroBadge: "Tribunj, Croatie",
-            heroTitle: "Bienvenue à la Vila Kartal",
-            heroSubtitle: "Votre retraite paisible sur la magnifique côte adriatique. Découvrez un charme côtier authentique, des eaux cristallines et une hospitalité dalmate inoubliable.",
-            heroBtn1: "Envoyer une demande", heroBtn2: "En savoir plus",
-            heroScroll: "Défiler vers le bas",
-            aboutTag: "Découvrez-nous", aboutTitle: "À propos de Vila Kartal",
-            aboutSubtitle: "Vivez le parfait mélange du charme dalmate traditionnel et du confort moderne sur la côte adriatique.",
-            exploreTitle: "Découvrir Tribunj & ses environs",
-            exploreSubtitle: "Bienvenue à Tribunj ! Voici nos meilleures recommandations pour les activités et attractions à ne pas manquer.",
-            bookingTag: "Planifiez votre séjour", bookingTitle: "Envoyer une demande",
-            bookingSubtitle: "Remplissez le formulaire ci-dessous et nous vous contacterons dès que possible pour confirmer la disponibilité.",
-            contactTag: "Nous contacter", contactTitle: "Contact",
-            contactSubtitle: "Des questions ? Nous aimerions avoir de vos nouvelles. Contactez-nous à tout moment.",
-            footerTagline: "Votre retraite paisible sur la magnifique côte adriatique. Vivez l'hospitalité dalmate authentique au cœur de Tribunj."
+            navAbout:"À propos", navServices:"Services", navGallery:"Galerie",
+            navExplore:"Explorer", navBook:"Réserver", navContact:"Contact",
+            heroBadge:"Tribunj, Croatie",
+            heroTitle:"Bienvenue à la Vila Kartal",
+            heroSubtitle:"Votre retraite paisible sur la magnifique côte adriatique. Découvrez un charme côtier authentique, des eaux cristallines et une hospitalité dalmate inoubliable.",
+            heroBtn1:"Envoyer une demande", heroBtn2:"En savoir plus", heroScroll:"Défiler vers le bas",
+            aboutTag:"Découvrez-nous", aboutTitle:"À propos de Vila Kartal",
+            aboutSubtitle:"Vivez le parfait mélange du charme dalmate traditionnel et du confort moderne sur la côte adriatique.",
+            aboutP1:"Nichée dans la charmante ville côtière de Tribunj, la Vila Kartal offre un parfait mélange d'architecture dalmate traditionnelle et de confort moderne. Notre villa constitue une base idéale pour explorer les plages préservées, les eaux cristallines et le riche patrimoine culturel de la côte croate.",
+            aboutP2:"Que vous recherchiez une escapade romantique, des vacances en famille ou une retraite paisible, notre équipe dévouée veille à ce que chaque détail soit pris en charge avec chaleur et attention personnelle.",
+            feat1:"Terrasse vue mer", feat2:"Parking privé", feat3:"Cuisine moderne", feat4:"Climatisation",
+            ownerRole:"Propriétaire & Hôte",
+            servicesTag:"Nos prestations", servicesTitle:"Services de la Villa", servicesSubtitle:"Tout ce dont vous avez besoin pour un parfait séjour adriatique.",
+            svc1Title:"Piscine", svc1Desc:"Profitez de notre piscine extérieure privée entourée d'un jardin méditerranéen.",
+            svc2Title:"Wi-Fi gratuit", svc2Desc:"Restez connecté avec internet haut débit dans toute la propriété.",
+            svc3Title:"Transfert aéroport", svc3Desc:"Service de navette pratique depuis les aéroports de Zadar ou Split.",
+            svc4Title:"Tours locaux", svc4Desc:"Découvrez des joyaux cachés avec nos excursions locales guidées.",
+            galleryTag:"Voyage visuel", galleryTitle:"Notre Galerie", gallerySubtitle:"Un aperçu de la beauté et de la tranquillité qui vous attendent à la Vila Kartal.",
+            exploreTitle:"Découvrir Tribunj & ses environs",
+            exploreSubtitle:"Bienvenue à Tribunj ! Voici nos meilleures recommandations pour les activités et attractions à ne pas manquer.",
+            reviewsTag:"Avis des clients", reviewsTitle:"Ce que disent nos hôtes", reviewsSubtitle:"Expériences réelles de nos hôtes sur Google Reviews.",
+            bookingTag:"Planifiez votre séjour", bookingTitle:"Envoyer une demande",
+            bookingSubtitle:"Remplissez le formulaire et nous vous contacterons dès que possible pour confirmer la disponibilité.",
+            bookingWhy:"Comment ça marche",
+            bookingWhyDesc:"Nous gérons chaque réservation personnellement. Envoyez-nous votre demande et nous vous répondrons dans les 24 heures.",
+            contactTag:"Nous contacter", contactTitle:"Contact", contactSubtitle:"Des questions ? Nous aimerions avoir de vos nouvelles.",
+            footerTagline:"Votre retraite paisible sur la magnifique côte adriatique. Vivez l'hospitalité dalmate authentique au cœur de Tribunj.",
+            footerQuick:"Liens rapides", footerExplore:"Explorer", footerContact:"Coordonnées",
+            footerReviews:"Avis clients", footerAttractions:"Attractions locales",
+            footerBeach:"Guide plages", footerRestaurants:"Conseils restaurants", footerBoat:"Tours en bateau"
         },
         it: {
-            navAbout: "Chi siamo", navServices: "Servizi", navGallery: "Galleria",
-            navExplore: "Esplora", navBook: "Prenota", navContact: "Contatti",
-            heroBadge: "Tribunj, Croazia",
-            heroTitle: "Benvenuti alla Vila Kartal",
-            heroSubtitle: "Il vostro rifugio tranquillo sulla splendida costa adriatica. Scoprite il fascino costiero autentico, acque cristalline e l'indimenticabile ospitalità dalmata.",
-            heroBtn1: "Invia richiesta", heroBtn2: "Scopri di più",
-            heroScroll: "Scorri verso il basso",
-            aboutTag: "Scoprici", aboutTitle: "Chi siamo — Vila Kartal",
-            aboutSubtitle: "Vivete la perfetta combinazione di fascino dalmata tradizionale e comfort moderno sulla costa adriatica.",
-            exploreTitle: "Scopri Tribunj e dintorni",
-            exploreSubtitle: "Benvenuti a Tribunj! Ecco i nostri migliori consigli per attività e attrazioni da non perdere durante il vostro soggiorno.",
-            bookingTag: "Pianifica il tuo soggiorno", bookingTitle: "Invia una richiesta",
-            bookingSubtitle: "Compila il modulo e ti contatteremo al più presto per confermare la disponibilità e discutere il tuo soggiorno.",
-            contactTag: "Contattaci", contactTitle: "Contatti",
-            contactSubtitle: "Hai domande? Ci farebbe piacere sentirti. Scrivici in qualsiasi momento.",
-            footerTagline: "Il vostro rifugio tranquillo sulla splendida costa adriatica. Vivete l'autentica ospitalità dalmata nel cuore di Tribunj."
+            navAbout:"Chi siamo", navServices:"Servizi", navGallery:"Galleria",
+            navExplore:"Esplora", navBook:"Prenota", navContact:"Contatti",
+            heroBadge:"Tribunj, Croazia",
+            heroTitle:"Benvenuti alla Vila Kartal",
+            heroSubtitle:"Il vostro rifugio tranquillo sulla splendida costa adriatica. Scoprite il fascino costiero autentico, acque cristalline e l'indimenticabile ospitalità dalmata.",
+            heroBtn1:"Invia richiesta", heroBtn2:"Scopri di più", heroScroll:"Scorri verso il basso",
+            aboutTag:"Scoprici", aboutTitle:"Chi siamo — Vila Kartal",
+            aboutSubtitle:"Vivete la perfetta combinazione di fascino dalmata tradizionale e comfort moderno sulla costa adriatica.",
+            aboutP1:"Immersa nella affascinante città costiera di Tribunj, la Vila Kartal offre un perfetto mix di architettura dalmatica tradizionale e comfort moderno. La nostra villa è una base ideale per esplorare le spiagge incontaminate, le acque cristalline e il ricco patrimonio culturale della costa croata.",
+            aboutP2:"Che stiate cercando una fuga romantica, una vacanza in famiglia o un rifugio tranquillo, il nostro team dedicato si assicura che ogni dettaglio sia curato con calore e attenzione personale.",
+            feat1:"Terrazza vista mare", feat2:"Parcheggio privato", feat3:"Cucina moderna", feat4:"Aria condizionata",
+            ownerRole:"Proprietario & Host",
+            servicesTag:"I nostri servizi", servicesTitle:"Servizi della Villa", servicesSubtitle:"Tutto ciò di cui avete bisogno per una perfetta vacanza adriatica.",
+            svc1Title:"Piscina", svc1Desc:"Godetevi la nostra piscina esterna privata circondata dal giardino mediterraneo.",
+            svc2Title:"Wi-Fi gratuito", svc2Desc:"Rimanete connessi con internet ad alta velocità in tutta la proprietà.",
+            svc3Title:"Transfer aeroporto", svc3Desc:"Servizio navetta dall'aeroporto di Zadar o Split.",
+            svc4Title:"Tour locali", svc4Desc:"Scoprite gemme nascoste con le nostre escursioni locali guidate.",
+            galleryTag:"Viaggio visivo", galleryTitle:"La nostra Galleria", gallerySubtitle:"Uno sguardo alla bellezza e alla tranquillità che vi aspettano alla Vila Kartal.",
+            exploreTitle:"Scopri Tribunj e dintorni",
+            exploreSubtitle:"Benvenuti a Tribunj! Ecco i nostri migliori consigli per attività e attrazioni da non perdere.",
+            reviewsTag:"Recensioni degli ospiti", reviewsTitle:"Cosa dicono i nostri ospiti", reviewsSubtitle:"Esperienze reali dei nostri ospiti su Google Reviews.",
+            bookingTag:"Pianifica il soggiorno", bookingTitle:"Invia una richiesta",
+            bookingSubtitle:"Compila il modulo e ti contatteremo al più presto per confermare la disponibilità.",
+            bookingWhy:"Come funziona",
+            bookingWhyDesc:"Gestiamo ogni prenotazione personalmente. Inviateci la vostra richiesta e vi risponderemo entro 24 ore.",
+            contactTag:"Contattaci", contactTitle:"Contatti", contactSubtitle:"Hai domande? Ci farebbe piacere sentirti.",
+            footerTagline:"Il vostro rifugio tranquillo sulla splendida costa adriatica. Vivete l'autentica ospitalità dalmata nel cuore di Tribunj.",
+            footerQuick:"Link rapidi", footerExplore:"Esplora", footerContact:"Contatti",
+            footerReviews:"Recensioni ospiti", footerAttractions:"Attrazioni locali",
+            footerBeach:"Guida spiagge", footerRestaurants:"Consigli ristoranti", footerBoat:"Tour in barca"
         }
     };
 
-    function changeLanguage(lang) {
-        // Smooth fade transition
-        document.body.classList.add('lang-fade');
-        setTimeout(function() {
+    function applyTranslation(lang) {
         const t = translations[lang];
-        if (!t) { document.body.classList.remove('lang-fade'); return; }
+        if (!t) return;
         document.documentElement.lang = lang;
 
-        // Nav links
+        // Nav
         const navLinks = document.querySelectorAll('.nav-links a');
-        if (navLinks[0]) navLinks[0].textContent = t.navAbout;
-        if (navLinks[1]) navLinks[1].textContent = t.navServices;
-        if (navLinks[2]) navLinks[2].textContent = t.navGallery;
-        if (navLinks[3]) navLinks[3].textContent = t.navExplore;
-        if (navLinks[4]) navLinks[4].textContent = t.navBook;
-        if (navLinks[5]) navLinks[5].textContent = t.navContact;
+        const navKeys = ['navAbout','navServices','navGallery','navExplore','navBook','navContact'];
+        navLinks.forEach((el,i) => { if(navKeys[i] && t[navKeys[i]]) el.textContent = t[navKeys[i]]; });
 
         // Hero
-        const heroBadge = document.querySelector('.hero-badge');
-        if (heroBadge) heroBadge.innerHTML = heroBadge.innerHTML.replace(/Tribunj.*/, '') + t.heroBadge;
+        const heroBadgeEl = document.querySelector('.hero-badge');
+        if (heroBadgeEl) {
+            const svg = heroBadgeEl.querySelector('svg');
+            heroBadgeEl.textContent = ' ' + t.heroBadge;
+            if (svg) heroBadgeEl.prepend(svg);
+        }
         const heroH1 = document.querySelector('.hero-content h1');
         if (heroH1) heroH1.textContent = t.heroTitle;
         const heroP = document.querySelector('.hero-content > p');
         if (heroP) heroP.textContent = t.heroSubtitle;
-        const heroBtn1 = document.querySelector('.btn-primary');
-        if (heroBtn1) { heroBtn1.childNodes[heroBtn1.childNodes.length - 1].textContent = ' ' + t.heroBtn1; }
-        const heroBtn2 = document.querySelector('.btn-outline');
-        if (heroBtn2) { heroBtn2.firstChild.textContent = t.heroBtn2 + ' '; }
-        const heroScroll = document.querySelector('.hero-scroll span');
-        if (heroScroll) heroScroll.textContent = t.heroScroll;
+        const btn1 = document.querySelector('.btn-primary');
+        if (btn1) { const svg = btn1.querySelector('svg'); btn1.textContent = ' ' + t.heroBtn1; if(svg) btn1.prepend(svg); }
+        const btn2 = document.querySelector('.btn-outline');
+        if (btn2) { const svg = btn2.querySelector('svg'); btn2.textContent = t.heroBtn2 + ' '; if(svg) btn2.appendChild(svg); }
+        const scrollSpan = document.querySelector('.hero-scroll span');
+        if (scrollSpan) scrollSpan.textContent = t.heroScroll;
 
-        // Section headers via data-i18n
+        // data-i18n attributes
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (t[key]) el.textContent = t[key];
         });
 
-        // Footer tagline
+        // About paragraphs
+        const aboutPs = document.querySelectorAll('.about-text > p');
+        if (aboutPs[0] && t.aboutP1) aboutPs[0].textContent = t.aboutP1;
+        if (aboutPs[1] && t.aboutP2) aboutPs[1].textContent = t.aboutP2;
+
+        // About features
+        document.querySelectorAll('.about-feature').forEach((el, i) => {
+            const key = ['feat1','feat2','feat3','feat4'][i];
+            if (key && t[key]) { const svg = el.querySelector('svg'); el.textContent = ' ' + t[key]; if(svg) el.prepend(svg); }
+        });
+
+        // Owner role
+        const ownerSpan = document.querySelector('.owner-info span');
+        if (ownerSpan && t.ownerRole) ownerSpan.textContent = t.ownerRole;
+
+        // Service cards
+        document.querySelectorAll('.service-card').forEach((card, i) => {
+            const tk = ['svc1Title','svc2Title','svc3Title','svc4Title'][i];
+            const dk = ['svc1Desc','svc2Desc','svc3Desc','svc4Desc'][i];
+            const h3 = card.querySelector('h3');
+            const p  = card.querySelector('p');
+            if (h3 && t[tk]) h3.textContent = t[tk];
+            if (p  && t[dk]) p.textContent  = t[dk];
+        });
+
+        // Booking info box
+        const bookH3 = document.querySelector('.booking-info h3');
+        if (bookH3 && t.bookingWhy) bookH3.textContent = t.bookingWhy;
+        const bookDesc = document.querySelector('.booking-info > p');
+        if (bookDesc && t.bookingWhyDesc) bookDesc.textContent = t.bookingWhyDesc;
+
+        // Footer
         const footerP = document.querySelector('.footer-brand p');
         if (footerP) footerP.textContent = t.footerTagline;
-
-        // Fade back in
-        document.body.classList.remove('lang-fade');
-        }, 300);
+        const footerHeadings = document.querySelectorAll('.footer-column h4');
+        if (footerHeadings[0] && t.footerQuick) footerHeadings[0].textContent = t.footerQuick;
+        if (footerHeadings[1] && t.footerExplore) footerHeadings[1].textContent = t.footerExplore;
+        if (footerHeadings[2] && t.footerContact) footerHeadings[2].textContent = t.footerContact;
+        const footerLinks = document.querySelectorAll('.footer-column:nth-child(2) li a');
+        const footerLinkKeys = ['footerReviews','footerAttractions','footerBeach','footerRestaurants','footerBoat'];
+        footerLinks.forEach((el,i) => { if(footerLinkKeys[i] && t[footerLinkKeys[i]]) el.textContent = t[footerLinkKeys[i]]; });
     }
 
-    // Detect browser language on load
+    function changeLanguage(lang) {
+        // Save to localStorage so other page picks it up
+        try { localStorage.setItem('vilaKartalLang', lang); } catch(e) {}
+        document.body.classList.add('lang-fade');
+        setTimeout(function() {
+            applyTranslation(lang);
+            document.body.classList.remove('lang-fade');
+        }, 280);
+    }
+
     window.addEventListener('DOMContentLoaded', function() {
-        const browserLang = navigator.language.slice(0, 2);
         const supported = ['en','de','hr','fr','it'];
-        const lang = supported.includes(browserLang) ? browserLang : 'en';
+        // 1. Check localStorage (language remembered from other page)
+        let lang = null;
+        try { lang = localStorage.getItem('vilaKartalLang'); } catch(e) {}
+        // 2. Fall back to browser language
+        if (!lang || !supported.includes(lang)) {
+            lang = navigator.language.slice(0,2);
+            if (!supported.includes(lang)) lang = 'en';
+        }
         const sel = document.getElementById('language-select');
-        if (sel) { sel.value = lang; changeLanguage(lang); }
+        if (sel) sel.value = lang;
+        applyTranslation(lang);
     });
     </script>
 </body>
