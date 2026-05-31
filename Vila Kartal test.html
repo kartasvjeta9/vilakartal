@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vila Kartal - Your peaceful retreat in Tribunj, Croatia. Discover authentic coastal charm, stunning sea views, and unforgettable experiences on the Adriatic coast.">
+    <meta name="keywords" content="Vila Kartal, Tribunj Croatia, seaside villa, coastal retreat, Adriatic coast tourism, vacation rental, boutique accommodation, Croatian coast, summer getaway, Žirjanska ulica">
+    <meta name="author" content="Elvis Kartal">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vila Kartal | Coastal Retreat in Tribunj, Croatia">
+    <meta property="og:description" content="Discover authentic coastal charm at Vila Kartal in Tribunj. Experience stunning sea views, peaceful surroundings, and warm Croatian hospitality.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Vila Kartal">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vila Kartal | Coastal Retreat in Tribunj, Croatia">
+    <meta name="twitter:description" content="Discover authentic coastal charm at Vila Kartal in Tribunj. Experience stunning sea views, peaceful surroundings, and warm Croatian hospitality.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <title>Vila Kartal | Coastal Retreat in Tribunj, Croatia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: #fafcff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 0 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 0 rgba(30, 144, 255, 0.08), 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        nav.scrolled {
+            box-shadow: 0 2px 30px rgba(30, 144, 255, 0.12);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1e90ff;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            transition: opacity 0.3s;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+        }
+
+        .logo-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 0.925rem;
+            padding: 0.5rem 1.1rem;
+            border-radius: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #1e90ff;
+            background: rgba(30, 144, 255, 0.06);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 20px;
+            height: 2px;
+            background: #1e90ff;
+            border-radius: 1px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-links a:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .lang-switcher select {
+            padding: 0.5rem 2.2rem 0.5rem 0.85rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            background-color: white;
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231e90ff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.6rem center;
+            background-size: 0.6em auto;
+            transition: all 0.3s;
+        }
+
+        .lang-switcher select:hover {
+            border-color: #1e90ff;
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+            border: none;
+            background: none;
+        }
+
+        .mobile-toggle span {
+            width: 24px;
+            height: 2px;
+            background: #1e90ff;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(0, 191, 255, 0.5)),
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(30, 144, 255, 0.15));
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-badge svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-content p {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            margin-bottom: 2.5rem;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.92;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.9rem 2rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #1e90ff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            background: #f0f8ff;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: translateY(-3px);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            animation: bounce 2s infinite;
+        }
+
+        .hero-scroll svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* ===== SECTION STYLING ===== */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #1e90ff;
+            background: rgba(30, 144, 255, 0.08);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: #718096;
+            line-height: 1.7;
+        }
+
+        /* ===== ABOUT ===== */
+        #about {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .about-feature svg {
+            width: 20px;
+            height: 20px;
+            fill: #1e90ff;
+            flex-shrink: 0;
+        }
+
+        .about-owner {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .owner-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .owner-info strong {
+            display: block;
+            color: #1a202c;
+            font-size: 1rem;
+        }
+
+        .owner-info span {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(30, 144, 255, 0.15);
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(30, 144, 255, 0.15);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-stats {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: white;
+            padding: 1.25rem 1.75rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1e90ff;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        /* ===== SERVICES ===== */
+        #services {
+            background: linear-gradient(180deg, #f0f7ff 0%, #fafcff 100%);
+        }
+
+        .services-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(30, 144, 255, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1e90ff, #00bfff);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(30, 144, 255, 0.12);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.08), rgba(0, 191, 255, 0.08));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+            transition: all 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+        }
+
+        .service-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #1e90ff;
+            transition: fill 0.4s;
+        }
+
+        .service-card:hover .service-icon svg {
+            fill: white;
+        }
+
+        .service-card h3 {
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #718096;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ===== GALLERY ===== */
+        #gallery {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 1.25rem;
+        }
+
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+            aspect-ratio: auto;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(30, 144, 255, 0.3), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* ===== EXPLORE TRIBUNJ (NEW SECTION) ===== */
+        #explore {
+            background: #fafcff;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .explore-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .explore-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(30, 144, 255, 0.06);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
+        }
+
+        .explore-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(30, 144, 255, 0.1);
+        }
+
+        .explore-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .explore-content {
+            padding: 2.5rem 2rem;
+        }
+
+        .explore-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .explore-content h3 svg {
+            width: 24px;
+            height: 24px;
+            fill: #1e90ff;
+        }
+
+        .explore-item {
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .explore-item::before {
+            content: '•';
+            color: #1e90ff;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -6px;
+        }
+
+        .explore-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .explore-item h4 {
+            font-size: 1.05rem;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        .explore-item p {
+            font-size: 0.95rem;
+            color: #718096;
+            line-height: 1.6;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        #testimonials {
+            background: linear-gradient(180deg, #fafcff 0%, #f0f7ff 100%);
+        }
+
+        .testimonials-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(30, 144, 255, 0.06);
+            transition: all 0.35s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(30, 144, 255, 0.1);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-stars svg {
+            width: 16px;
+            height: 16px;
+            fill: #f6ad55;
+        }
+
+        .testimonial-card blockquote {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .testimonial-author-info strong {
+            display: block;
+            font-size: 0.9rem;
+            color: #1a202c;
+        }
+
+        .testimonial-author-info span {
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+
+        /* ===== BOOKING ===== */
+        #booking {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+        }
+
+        .booking-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .booking-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .booking-info {
+            padding: 1rem 0;
+        }
+
+        .booking-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        .booking-info p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .booking-highlights {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .booking-highlights li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .booking-highlights li svg {
+            width: 18px;
+            height: 18px;
+            fill: #1e90ff;
+            flex-shrink: 0;
+        }
+
+        .booking-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 60px rgba(30, 144, 255, 0.1);
+            border: 1px solid rgba(30, 144, 255, 0.08);
+        }
+
+        .booking-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-card > p {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #4a5568;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.8rem 1rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #2d3748;
+            transition: all 0.3s;
+            background: #fafcff;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #1e90ff;
+            box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+            background: white;
+        }
+
+        .form-group input::placeholder {
+            color: #a0aec0;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .booking-form button {
+            grid-column: 1 / -1;
+            padding: 1rem;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 0.5rem;
+        }
+
+        .booking-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 144, 255, 0.35);
+        }
+
+        /* ===== CONTACT ===== */
+        #contact {
+            background: linear-gradient(180deg, #fafcff 0%, #f0f7ff 100%);
+        }
+
+        .contact-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3rem;
+        }
+
+        .contact-info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 1.75rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(30, 144, 255, 0.06);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: all 0.35s;
+        }
+
+        .contact-card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 8px 30px rgba(30, 144, 255, 0.08);
+        }
+
+        .contact-card-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.08), rgba(0, 191, 255, 0.08));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #1e90ff;
+        }
+
+        .contact-card h4 {
+            font-size: 0.95rem;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            font-size: 0.9rem;
+            color: #718096;
+            line-height: 1.5;
+        }
+
+        .contact-card a:hover {
+            color: #1e90ff;
+        }
+
+        .contact-form-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(30, 144, 255, 0.08);
+            border: 1px solid rgba(30, 144, 255, 0.06);
+        }
+
+        .contact-form-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #2d3748;
+            resize: vertical;
+            min-height: 120px;
+            transition: all 0.3s;
+            background: #fafcff;
+        }
+
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #1e90ff;
+            box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+            background: white;
+        }
+
+        .contact-form button {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 144, 255, 0.35);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: linear-gradient(135deg, #0d47a1, #1565c0, #1e90ff);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand .footer-logo-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-brand .footer-logo-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer-column h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-column ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: white;
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .footer-social svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
+
+        /* ===== BACK TO TOP ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 90px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(30, 144, 255, 0.35);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(30, 144, 255, 0.45);
+        }
+
+        .back-to-top svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        /* ===== CHATBOT WIDGET ===== */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9998;
+        }
+
+        .chatbot-btn {
+            width: 58px;
+            height: 58px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(30, 144, 255, 0.35);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .chatbot-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 30px rgba(30, 144, 255, 0.45);
+        }
+
+        .chatbot-btn svg {
+            width: 26px;
+            height: 26px;
+            fill: white;
+        }
+
+        .chatbot-pulse {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            width: 14px;
+            height: 14px;
+            background: #48bb78;
+            border-radius: 50%;
+            border: 2px solid white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(72, 187, 120, 0.5); }
+            70% { box-shadow: 0 0 0 10px rgba(72, 187, 120, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(72, 187, 120, 0); }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .explore-grid {
+                gap: 1.5rem;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .booking-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 0;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                border-top: 1px solid rgba(30, 144, 255, 0.08);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 0.85rem 1rem;
+                border-radius: 8px;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .about-image {
+                order: -1;
+            }
+
+            .about-stats {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+
+            .services-grid,
+            .explore-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 2;
+                grid-row: span 1;
+                aspect-ratio: 16/9;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-form .full-width {
+                grid-column: auto;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 4rem 1.25rem;
+            }
+
+            .explore-content {
+                padding: 1.5rem;
+            }
+
+            .booking-card {
+                padding: 1.75rem;
+            }
+
+            .contact-form-card {
+                padding: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2zm0 2.84L18 10v7h-2v-6H8v6H6v-7l6-5.16z"/>
+                    </svg>
+                </div>
+                Vila Kartal
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <select id="language-select" aria-label="Select language">
+                        <option value="en">EN</option>
+                        <option value="de">DE</option>
+                        <option value="hr">HR</option>
+                    </select>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Tribunj, Croatia
+            </div>
+            <h1>Welcome to Vila Kartal</h1>
+            <p>Your peaceful retreat on the stunning Adriatic coast. Discover authentic coastal charm, crystal-clear waters, and unforgettable Dalmatian hospitality.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                    Reserve Your Stay
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    Explore More
+                    <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="hero-scroll">
+            <span>Scroll Down</span>
+            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </a>
+    </header>
+
+    <section id="about">
+        <div class="section-header">
+            <span class="section-tag">Discover Us</span>
+            <h2 class="section-title">About Vila Kartal</h2>
+            <p class="section-subtitle">Experience the perfect blend of traditional Dalmatian charm and modern comfort on the Adriatic coast.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Nestled in the charming coastal town of Tribunj, Vila Kartal offers a perfect blend of traditional Dalmatian architecture and modern comfort. Our villa provides an ideal base for exploring the pristine beaches, crystal-clear waters, and rich cultural heritage of the Croatian coast.</p>
+                <p>Whether you're seeking a romantic getaway, a family vacation, or a peaceful retreat, our dedicated team ensures every detail is taken care of with warmth and personal attention.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Sea View Terrace
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Private Parking
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Modern Kitchen
+                    </div>
+                    <div class="about-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Air Conditioning
+                    </div>
+                </div>
+                <div class="about-owner">
+                    <div class="owner-avatar">EK</div>
+                    <div class="owner-info">
+                        <strong>Elvis Kartal</strong>
+                        <span>Owner & Host</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vila Kartal Exterior" loading="lazy">
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Guests</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-inner">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Everything you need for a perfect coastal getaway, thoughtfully curated for your comfort.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                    </div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with high-speed internet throughout the entire property.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"/></svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is available around the clock to assist you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                    </div>
+                    <h3>Airport Transfer</h3>
+                    <p>Convenient pickup and drop-off services from Zadar or Split airports.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                    </div>
+                    <h3>Local Tours</h3>
+                    <p>Discover hidden gems with our guided local excursions and recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="section-header">
+            <span class="section-tag">Visual Journey</span>
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="section-subtitle">A glimpse into the beauty and tranquility that awaits you at Vila Kartal.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury room interior" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pool area" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dining area" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coastal view" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Villa terrace" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="explore">
+        <div class="section-header">
+            <span class="section-tag">Local Guide</span>
+            <h2 class="section-title">Discover Tribunj & Surroundings</h2>
+            <p class="section-subtitle">Welcome to Tribunj! Here are our top recommendations for activities and attractions you shouldn't miss during your stay.</p>
+        </div>
+        <div class="explore-grid">
+            <div class="explore-card">
+                <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tribunj Coast" class="explore-img" loading="lazy">
+                <div class="explore-content">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        In Tribunj (Walking Distance)
+                    </h3>
+                    <div class="explore-item">
+                        <h4>Old Village on the Island</h4>
+                        <p>The historic core is situated on a small island connected by an old stone bridge. Perfect for a sunset stroll and dinner in an authentic tavern.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>St. Nicholas Hill & Church</h4>
+                        <p>A short, steep walk to this 15th-century church rewards you with one of the most beautiful panoramic views of the Adriatic coast.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Zamalin & Bristak Beaches</h4>
+                        <p>Enjoy pristine waters! Zamalin is a local favorite surrounded by pine trees, while Bristak is perfect for families with children.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Traditional Donkey Race</h4>
+                        <p>If you visit in early August, don't miss this hilarious and unique local tradition that draws crowds every year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explore-card">
+                <img src="https://images.unsplash.com/photo-1590059346513-41bbd070be79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Krka Waterfalls" class="explore-img" loading="lazy">
+                <div class="explore-content">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        Nearby Excursions
+                    </h3>
+                    <div class="explore-item">
+                        <h4>Krka National Park</h4>
+                        <p>An absolute must-see! Just a 20-minute drive away, offering spectacular waterfalls (Skradinski Buk) and boat rides to Visovac island.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>City of Šibenik (UNESCO)</h4>
+                        <p>Visit this medieval city to explore the famous St. James Cathedral and its magnificent defensive fortresses offering breathtaking views.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>City of Vodice</h4>
+                        <p>Our neighboring town, accessible via a lovely seaside promenade. Known for its vibrant nightlife, large marina, and excellent restaurants.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explore-card">
+                <img src="https://images.unsplash.com/photo-1549467610-86ec1b3e7a05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kornati Islands" class="explore-img" loading="lazy">
+                <div class="explore-content">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/></svg>
+                        Boat Excursions & Islands
+                    </h3>
+                    <div class="explore-item">
+                        <h4>Kornati National Park</h4>
+                        <p>A nautical paradise consisting of 89 islands. Full-day boat tours depart daily, including cruising, swimming in crystal-clear waters, and lunch on board.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Prvić Island</h4>
+                        <p>A peaceful, car-free island just a short boat ride away. Visit the Memorial Center dedicated to Faust Vrančić, the famous Croatian inventor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explore-card">
+                <img src="https://images.unsplash.com/photo-1518338985141-9a744f94efeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cycling in Nature" class="explore-img" loading="lazy">
+                <div class="explore-content">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M14.59 13.59L16 15l4-4-4-4-1.41 1.41L17.17 11H9v2h8.17l-2.58 2.59zM20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM4 19V5h16v14H4z"/></svg>
+                        Nature & Active Holidays
+                    </h3>
+                    <div class="explore-item">
+                        <h4>Vrana Lake Nature Park</h4>
+                        <p>Croatia's largest natural lake. A fantastic spot for cycling enthusiasts, fishing, and bird watching. The Kamenjak viewpoint offers unforgettable vistas.</p>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Dubrava Falconry Center</h4>
+                        <p>Located in a dense pine forest near Šibenik, this center offers a unique, educational, and up-close experience with majestic birds of prey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="testimonials-inner">
+            <div class="section-header">
+                <span class="section-tag">Guest Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-subtitle">Real experiences from travelers who made Vila Kartal their home away from home.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <blockquote>"An absolutely stunning villa with breathtaking sea views. Elvis was the perfect host — attentive, warm, and full of local recommendations. We'll definitely be back!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SM</div>
+                        <div class="testimonial-author-info">
+                            <strong>Sarah Mitchell</strong>
+                            <span>United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <blockquote>"Tribunj is a hidden gem and Vila Kartal is the perfect place to stay. The terrace overlooking the sea was our favorite spot for morning coffee. Pure magic!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MH</div>
+                        <div class="testimonial-author-info">
+                            <strong>Marco Hoffmann</strong>
+                            <span>Germany</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <blockquote>"We spent a wonderful week here with our family. The kids loved the nearby beaches, and we appreciated the peaceful atmosphere. Elvis made us feel like family!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JP</div>
+                        <div class="testimonial-author-info">
+                            <strong>Jean-Pierre Dubois</strong>
+                            <span>France</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="booking-inner">
+            <div class="section-header">
+                <span class="section-tag">Plan Your Visit</span>
+                <h2 class="section-title">Send an Inquiry</h2>
+                <p class="section-subtitle">Fill in the form below and we will get back to you as soon as possible to confirm availability and discuss your stay.</p>
+            </div>
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h3>How It Works</h3>
+                    <p>We handle every booking personally to make sure your stay at Vila Kartal is exactly what you need. Simply send us your inquiry and we'll be in touch within 24 hours.</p>
+                    <ul class="booking-highlights">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Send your inquiry — no payment required upfront
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            We confirm availability within 24 hours
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Personal welcome and property tour on arrival
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Local restaurant and activity recommendations
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Direct contact with the owner — no middlemen
+                        </li>
+                    </ul>
+                </div>
+                <div class="booking-card">
+                    <h3>Inquiry Form</h3>
+                    <p>This is not a direct booking. After submitting, we will contact you to confirm availability and arrange everything personally.</p>
+                    <form class="booking-form" id="bookingForm" onsubmit="handleInquiry(event)">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+385 91 234 5678">
+                        </div>
+                        <div class="form-group">
+                            <label>Apartment</label>
+                            <select required>
+                                <option value="" disabled selected>Select apartment</option>
+                                <optgroup label="L Apartments">
+                                    <option value="L-1">L-1</option>
+                                    <option value="L-2">L-2</option>
+                                    <option value="L-3">L-3</option>
+                                    <option value="L-4">L-4</option>
+                                </optgroup>
+                                <optgroup label="D Apartments">
+                                    <option value="D-1">D-1</option>
+                                    <option value="D-2">D-2</option>
+                                    <option value="D-3">D-3</option>
+                                    <option value="D-4">D-4</option>
+                                    <option value="D-5">D-5</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="Bungalo">Bungalow</option>
+                                    <option value="not-sure">Not sure yet — help me choose</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Check-in Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Check-out Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Adults</label>
+                            <input type="number" placeholder="2" min="1" max="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Children</label>
+                            <input type="number" placeholder="0" min="0" max="10">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Additional Notes / Special Requests</label>
+                            <textarea placeholder="Any special requirements, questions or notes for us..." style="width:100%;padding:0.85rem 1rem;border:1.5px solid #e2e8f0;border-radius:10px;font-family:inherit;font-size:0.925rem;resize:vertical;min-height:90px;color:#2d3748;background:#fff;transition:border-color 0.2s;" rows="3"></textarea>
+                        </div>
+                        <div style="background:rgba(30,144,255,0.06);border:1.5px solid rgba(30,144,255,0.15);border-radius:10px;padding:0.85rem 1rem;margin-bottom:1rem;font-size:0.875rem;color:#4a5568;">
+                            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#1e90ff;display:inline;vertical-align:middle;margin-right:6px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            <strong>Note:</strong> This form sends an inquiry only. No payment is required at this stage. We will contact you within 24 hours to confirm availability.
+                        </div>
+                        <button type="submit">
+                            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                            Send Inquiry
+                        </button>
+                        <div id="inquirySuccess" style="display:none;margin-top:1rem;background:rgba(34,197,94,0.08);border:1.5px solid rgba(34,197,94,0.3);border-radius:10px;padding:1rem;text-align:center;color:#15803d;font-weight:500;">
+                            ✓ Thank you! Your inquiry has been sent. We will get back to you within 24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function handleInquiry(e) {
+        e.preventDefault();
+        document.getElementById('bookingForm').style.opacity = '0.5';
+        document.getElementById('bookingForm').style.pointerEvents = 'none';
+        setTimeout(function() {
+            document.getElementById('inquirySuccess').style.display = 'block';
+            document.getElementById('bookingForm').style.opacity = '1';
+            document.getElementById('bookingForm').style.pointerEvents = 'auto';
+            document.getElementById('bookingForm').reset();
+        }, 600);
+    }
+    </script>
+
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you. Reach out anytime.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Žirjanska ul. 26<br>22212, Tribunj, Croatia</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:ajdinkartal6@gmail.com">ajdinkartal6@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>Available 24/7 for inquiries</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon – Sun: 8:00 AM – 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Email</label>
+                                <input type="email" placeholder="Email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+                        <button type="submit">
+                            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2zm0 2.84L18 10v7h-2v-6H8v6H6v-7l6-5.16z"/>
+                            </svg>
+                        </div>
+                        Vila Kartal
+                    </div>
+                    <p>Your peaceful retreat on the stunning Adriatic coast. Experience authentic Dalmatian hospitality in the heart of Tribunj, Croatia.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#explore">Explore Tribunj</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#testimonials">Guest Reviews</a></li>
+                        <li><a href="#explore">Local Attractions</a></li>
+                        <li><a href="#explore">Beach Guide</a></li>
+                        <li><a href="#explore">Restaurant Tips</a></li>
+                        <li><a href="#explore">Boat Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="#">Žirjanska ul. 26, Tribunj</a></li>
+                        <li><a href="mailto:ajdinkartal6@gmail.com">ajdinkartal6@gmail.com</a></li>
+                        <li><a href="#">Owner: Elvis Kartal</a></li>
+                        <li><a href="#">Mon – Sun: 8AM – 10PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vila Kartal. All rights reserved. | Designed with ❤️ in Croatia</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.15 5.96C15.21 5.96 16.12 6.04 16.39 6.08V8.7H14.86C13.64 8.7 13.4 9.28 13.4 10.12V12.06H16.34L15.86 14.96H13.4V21.96C18.19 21.21 21.86 17.06 21.86 12.06C21.86 6.53 17.35 2.04 12 2.04Z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1."/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
