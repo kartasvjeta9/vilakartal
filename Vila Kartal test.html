@@ -1479,6 +1479,14 @@
                 padding: 1.75rem;
             }
         }
+
+        /* Language transition */
+        body {
+            transition: opacity 0.4s ease;
+        }
+        body.lang-fade {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -1676,7 +1684,7 @@
         </div>
         <div class="explore-grid">
             <div class="explore-card">
-                <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tribunj Coast" class="explore-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1613416949413-f86e2c7fd0db?w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600011689032-8b628b8a8747?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Tribunj Coast" class="explore-img" loading="lazy">
                 <div class="explore-content">
                     <h3>
                         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -1706,7 +1714,7 @@
             </div>
 
             <div class="explore-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Krka Waterfalls" class="explore-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1580327344181-c1163234e5a0?w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Krka Waterfalls" class="explore-img" loading="lazy">
                 <div class="explore-content">
                     <h3>
                         <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
@@ -1732,7 +1740,7 @@
             </div>
 
             <div class="explore-card">
-                <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kornati Islands" class="explore-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Kornati Islands" class="explore-img" loading="lazy">
                 <div class="explore-content">
                     <h3>
                         <svg viewBox="0 0 24 24"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/></svg>
@@ -1754,7 +1762,7 @@
             </div>
 
             <div class="explore-card">
-                <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cycling in Nature" class="explore-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=800&q=80" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Cycling in Nature" class="explore-img" loading="lazy">
                 <div class="explore-content">
                     <h3>
                         <svg viewBox="0 0 24 24"><path d="M14.59 13.59L16 15l4-4-4-4-1.41 1.41L17.17 11H9v2h8.17l-2.58 2.59zM20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM4 19V5h16v14H4z"/></svg>
@@ -1981,7 +1989,7 @@
                         <div>
                             <h4>Our Location</h4>
                             <p>Žirjanska ul. 26<br>22212, Tribunj, Croatia</p>
-                            <a href="https://maps.google.com/?q=Žirjanska+ul.+26,+22212+Tribunj,+Croatia" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;margin-top:0.5rem;color:#1e90ff;font-size:0.85rem;font-weight:600;">
+                            <a href="https://maps.app.goo.gl/K7rqcfZv8mNjXnAMA" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;margin-top:0.5rem;color:#1e90ff;font-size:0.85rem;font-weight:600;">
                                 <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:#1e90ff"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                                 Get Directions
                             </a>
@@ -2019,18 +2027,18 @@
                 <!-- Google Maps Embed -->
                 <div style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-top:0;">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.1234567890!2d15.7523!3d43.7934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13356b00000000%3A0x0!2s%C5%BDirjanska+ul.+26%2C+22212+Tribunj%2C+Croatia!5e0!3m2!1sen!2shr!4v1"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500!2d15.7544415!3d43.7575566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1334d7964c1a77a1%3A0x6d5ff3cf3fe254df!2sVilla%20Kartal!5e0!3m2!1sen!2shr!4v1"
                         width="100%"
-                        height="300"
+                        height="320"
                         style="border:0;display:block;"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Vila Kartal location on Google Maps">
+                        title="Vila Kartal - Žirjanska ul. 26, Tribunj">
                     </iframe>
                     <div style="padding:0.75rem 1rem;background:#fff;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f4f8;">
                         <span style="font-size:0.85rem;color:#4a5568;">📍 Žirjanska ul. 26, 22212 Tribunj, Croatia</span>
-                        <a href="https://maps.google.com/?q=Žirjanska+ul.+26,+22212+Tribunj,+Croatia" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:600;color:#1e90ff;">Open in Maps →</a>
+                        <a href="https://maps.app.goo.gl/K7rqcfZv8mNjXnAMA" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:600;color:#1e90ff;">Open in Maps →</a>
                     </div>
                 </div>
 
@@ -2219,8 +2227,11 @@
     };
 
     function changeLanguage(lang) {
+        // Smooth fade transition
+        document.body.classList.add('lang-fade');
+        setTimeout(function() {
         const t = translations[lang];
-        if (!t) return;
+        if (!t) { document.body.classList.remove('lang-fade'); return; }
         document.documentElement.lang = lang;
 
         // Nav links
@@ -2255,6 +2266,10 @@
         // Footer tagline
         const footerP = document.querySelector('.footer-brand p');
         if (footerP) footerP.textContent = t.footerTagline;
+
+        // Fade back in
+        document.body.classList.remove('lang-fade');
+        }, 300);
     }
 
     // Detect browser language on load
